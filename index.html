@@ -5,14 +5,121 @@
     <link rel="icon" type="image/svg+xml" href="https://dev.adonys.me/assets/favicon.a2702d9d.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francesco Bianco</title>
-    <script type="module" crossorigin="" src="js/app.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .content {
+            width: 90%;
+            max-width: 680px;
+            margin: 0 auto
+        }
+
+        .link {
+            display: block;
+            background-color: #3d3b3c;
+            color: #eee;
+            text-align: center;
+            font-size: 1.6rem;
+            font-family: Karla, Helvetica, sans-serif;
+            font-weight: 600;
+            padding: 15px 0;
+            margin: 12px 0 11px;
+            border: 2px solid #3d3b3c
+        }
+
+        .link:hover {
+            color: #3d3b3c;
+            background-color: #eee
+        }
+
+        footer {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 15px;
+            color: #9b9b9b
+        }
+
+        footer p, footer a {
+            font-size: 1.6rem
+        }
+
+        footer a {
+            color: #9b9b9b
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            transition: .3s ease all;
+            color: #212529
+        }
+
+        header nav.logo {
+            text-align: center;
+            margin-bottom: 15px
+        }
+
+        header nav.logo img {
+            width: 150px;
+            border-radius: 100%;
+            border: #212529 solid
+        }
+
+        header nav.logo h1 {
+            font-size: 3.2rem;
+            font-weight: 700
+        }
+
+        header nav.logo p {
+            font-size: 2.4rem;
+            font-weight: 100;
+            color: #9b9b9b
+        }
+
+        *, *:before, *:after {
+            box-sizing: border-box
+        }
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            font-family: sans-serif;
+            font-size: 62.5%
+        }
+
+        body {
+            margin: 35px 10px 40px;
+            font-family: Karla, Helvetica, sans-serif;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            background-color: #f3f3f3;
+            color: #212529
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        ul {
+            padding: 0;
+            list-style: none
+        }
+    </style>
 </head>
 <body>
 <div id="root">
     <header class="content">
-        <nav class="logo"><img src="imgs/me.jpeg" alt="Adonys Santos photo">
-            <h1>Adonys Santos</h1>
+        <nav class="logo"><img src="https://github.com/francescobianco.png" alt="Francesco Bianco photo">
+            <h1>Francesco Bianco</h1>
             <p>Junior Frontend Developer with React</p></nav>
     </header>
     <main class="content" id="links">
