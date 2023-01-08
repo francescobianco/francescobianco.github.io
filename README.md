@@ -6,6 +6,7 @@ Public website
 
 Resources
 
+* <https://remixicon.com/>
 * <https://github.com/mathusummut/confetti.js/>
 
 ----
