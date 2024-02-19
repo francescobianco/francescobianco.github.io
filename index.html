@@ -21,14 +21,22 @@
             font-size: 1.6rem;
             font-family: Karla, Helvetica, sans-serif;
             font-weight: 600;
-            padding: 15px 0;
+            padding: 15px 0 12px;
             margin: 12px 0 11px;
-            border: 2px solid #3d3b3c
+            border: 2px solid #3d3b3c;
+            line-height: 2;
+            border-radius: 8px;
         }
 
         .link:hover {
             color: #3d3b3c;
             background-color: #eee
+        }
+
+        .link svg {
+            vertical-align: middle;
+            margin-right: 10px;
+            margin-top: -4px;
         }
 
         footer {
@@ -62,12 +70,14 @@
         header nav.logo img {
             width: 150px;
             border-radius: 100%;
-            border: #212529 solid
+            border: 3px #3d3b3c solid;
         }
 
         header nav.logo h1 {
             font-size: 3.2rem;
-            font-weight: 700
+            font-weight: 700;
+            color: #3d3b3c;
+            margin: 5px 0;
         }
 
         header nav.logo p {
@@ -90,23 +100,24 @@
             font-size: 1.6rem;
             line-height: 1.5;
             background-color: #f3f3f3;
-            color: #212529
+            color: #212529;
         }
         li.social-icon { display: inline-block }
         img { display: block; margin: 0 auto; max-width: 100%; height: auto }
         a { text-decoration: none }
         ul { padding: 0; list-style: none }
+        h1 small { font-size: 2rem; }
     </style>
 </head>
 <body>
 <div id="root">
     <header class="content">
         <nav class="logo">
-            <img src="https://github.com/francescobianco.png" alt="Francesco Bianco photo">
-            <h1>Francesco Bianco</h1>
+            <img src="https://github.com/francescobianco.png" alt="Francesco Bianco photo" width="144" height="144">
+            <h1><small>I'm</small> Francesco Bianco <small>aka YAFB</small></h1>
             <p>
                 Solutions Architect @javanile ~
-                Vulgarizer DevOps ~ BASH Maintainer ~
+                Vulgarizer DevOps ~ BASH Maintainer<br>
                 Open Source CRM Veteran ~ Chess Player ~
                 Father & Husband
             </p>
@@ -119,18 +130,20 @@
                     Portfolio
                 </a>
             </li-->
-            <li>
+            <!--li>
                 <a href="https://hardcode.blog/" target="_blank" rel="noopener noreferrer" class="link">
                     Blog &#x1F1FA;&#x1F1F8; &#x1F1EC;&#x1F1E7; &#x1F1EE;&#x1F1F9;
                 </a>
-            </li>
+            </li-->
             <li>
                 <a href="https://www.youtube.com/@yafb" target="_blank" rel="noopener noreferrer" class="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"></path></svg>
                     YouTube &#x1F1EE;&#x1F1F9;
                 </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/yafb" target="_blank" rel="noopener noreferrer" class="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"></path></svg>
                     LinkedIn &#x1F1FA;&#x1F1F8; &#x1F1EC;&#x1F1E7; &#x1F1EE;&#x1F1F9;
                 </a>
             </li>
@@ -144,11 +157,11 @@
                     GitHub &#x1F1FA;&#x1F1F8; &#x1F1EC;&#x1F1E7;
                 </a>
             </li-->
-            <li>
+            <!--li>
                 <a href="https://francescobianco.substack.com/" target="_blank" rel="noopener noreferrer" class="link">
                     Newsletter &#x1F1EE;&#x1F1F9;
                 </a>
-            </li>
+            </li-->
             <!--li>
                 <a href="https://www.behance.net/adonyssantos_" target="_blank" rel="noopener noreferrer" class="link">
                     Behance
@@ -159,24 +172,36 @@
                     Platzi
                 </a>
             </li-->
-            <li class="social-icon">
+            <!--li class="social-icon">
                 <a href="https://twitter.com/francescobianco" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><path fill="none" d="M0 0h24v24H0z"/><path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z" fill="rgba(61,59,60,1)"/></svg>
                 </a>
-            </li>
+            </li-->
+        </ul>
+
+        <!--hr>
+
+        -
+
+        <hr-->
+
+        <ul>
             </li class="social-icon">
                 <a href="https://github.com/francescobianco" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z" fill="rgba(61,59,60,1)"/></svg>
                 </a>
             </li>
         </ul>
-    </main>
-    <footer class="content">
 
+
+    </main>
+
+    <footer class="content">
         <p>
-            Made with &#x2615; by <a href="https://adonys.me/">Francesco Bianco</a>
+            Made with 🍕 by <a href="https://github.com/francescobianco">Francesco Bianco</a>
         </p>
     </footer>
+
 </div>
 </body>
 </html>
