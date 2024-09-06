@@ -129,6 +129,18 @@
         a { text-decoration: none }
         ul { padding: 0; list-style: none }
         h1 small { font-size: 2rem; }
+        a:hover .shine {
+            animation: rotate-smooth 5s cubic-bezier(0.3, 0.6, 0.1, 1) 1 forwards;
+            display: inline-block; /* Necessario per la rotazione */
+        }
+        @keyframes rotate-smooth {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(720deg); /* 2 giri completi */
+            }
+        }
     </style>
 </head>
 <body>
@@ -218,7 +230,7 @@
         <ul>
             <li class="hotlink">
                 <a href="portfolio.html" target="_blank" rel="noopener noreferrer">
-                    🌟 Portfolio / Scopri i miei servizi
+                    <span class="shine">🌟</span> Portfolio / Scopri i miei servizi
                 </a>
             </li>
         </ul>
