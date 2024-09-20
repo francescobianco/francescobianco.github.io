@@ -2,11 +2,12 @@
 
 Public website
 
+* <https://yafb.net>
 * <https://francescobianco.github.io>
 
 Resources
 
-* <https://github.com/mathusummut/confetti.js/>
+* <https://remixicon.com/>
 
 ----
 
